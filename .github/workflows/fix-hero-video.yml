@@ -1,0 +1,43 @@
+name: Fix hero video
+
+on:
+  push:
+    paths:
+      - '.github/workflows/fix-hero-video.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Patch hero video playback
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('index.html')
+          s = p.read_text()
+          old = '''<video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=2200&q=88">\n    <source src="https://videos.pexels.com/video-files/7849229/7849229-hd_1920_1080_25fps.mp4" type="video/mp4">\n  </video>'''
+          new = '''<video id="heroVideo" class="hero-video" autoplay muted loop playsinline preload="auto" poster="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=2200&q=88">\n    <source src="https://videos.pexels.com/video-files/7914779/7914779-hd_1920_1080_30fps.mp4" type="video/mp4">\n    <source src="https://videos.pexels.com/video-files/7849229/7849229-hd_1920_1080_25fps.mp4" type="video/mp4">\n  </video>'''
+          if old not in s:
+              raise SystemExit('Expected hero video block not found')
+          s = s.replace(old, new, 1)
+          needle = "document.querySelector('#year').textContent=new Date().getFullYear();"
+          patch = """document.querySelector('#year').textContent=new Date().getFullYear();\nconst heroVideo=document.querySelector('#heroVideo');\nif(heroVideo){\n  heroVideo.muted=true;\n  heroVideo.setAttribute('muted','');\n  heroVideo.setAttribute('playsinline','');\n  const startHeroVideo=()=>heroVideo.play().catch(()=>{});\n  if(heroVideo.readyState>=2) startHeroVideo();\n  else heroVideo.addEventListener('canplay',startHeroVideo,{once:true});\n  window.addEventListener('load',startHeroVideo,{once:true});\n  document.addEventListener('visibilitychange',()=>{if(!document.hidden&&heroVideo.paused) startHeroVideo()});\n}"""
+          if needle not in s:
+              raise SystemExit('Year script anchor not found')
+          s = s.replace(needle, patch, 1)
+          p.write_text(s)
+          PY
+      - name: Commit fix and remove temporary workflow
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          git rm .github/workflows/fix-hero-video.yml
+          git commit -m "Fix hero background video playback"
+          git push origin main
