@@ -36,7 +36,8 @@ footer{position:relative;border-top:1px solid var(--line);background:#060606;ove
 <div id="cursorLayer" aria-hidden="true"><div id="cursorDot"></div><div id="cursorRing"><div class="ring"><i></i><i></i><i></i><i></i></div></div></div>
 <header class="hero">
   <div class="hero-poster"></div>
-  <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=2200&q=88">
+  <video id="heroVideo" class="hero-video" autoplay muted loop playsinline preload="auto" poster="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=2200&q=88">
+    <source src="https://videos.pexels.com/video-files/7914779/7914779-hd_1920_1080_30fps.mp4" type="video/mp4">
     <source src="https://videos.pexels.com/video-files/7849229/7849229-hd_1920_1080_25fps.mp4" type="video/mp4">
   </video>
   <div class="hero-shade"></div><div class="grid"></div><div class="glow hero-glow-a"></div><div class="glow hero-glow-b"></div>
@@ -88,6 +89,17 @@ features.forEach((x,i)=>document.querySelector('#features').insertAdjacentHTML('
 plans.forEach((p,i)=>document.querySelector('#plans').insertAdjacentHTML('beforeend',`<div class="reveal" style="--d:${i*120}ms"><article class="plan sweep ${p.f?'featured':''}">${p.f?'<span class="badge">Most booked</span>':''}<h3>${p.n}</h3><div class="price">${p.p}</div><div class="unit">${p.u}</div><ul>${p.x.map(v=>`<li>${esc(v)}</li>`).join('')}</ul><a href="booking.html" class="btn ${p.f?'primary':'ghost'}">Reserve</a></article></div>`));
 events.forEach((x,i)=>document.querySelector('#eventsList').insertAdjacentHTML('beforeend',`<div class="reveal" style="--d:${i*100}ms"><div class="event"><span class="day">${x[0]}</span><div><h3>${esc(x[1])}</h3><p>${esc(x[2])}</p></div><span class="go">→</span></div></div>`));
 document.querySelector('#year').textContent=new Date().getFullYear();
+const heroVideo=document.querySelector('#heroVideo');
+if(heroVideo){
+  heroVideo.muted=true;
+  heroVideo.setAttribute('muted','');
+  heroVideo.setAttribute('playsinline','');
+  const startHeroVideo=()=>heroVideo.play().catch(()=>{});
+  if(heroVideo.readyState>=2) startHeroVideo();
+  else heroVideo.addEventListener('canplay',startHeroVideo,{once:true});
+  window.addEventListener('load',startHeroVideo,{once:true});
+  document.addEventListener('visibilitychange',()=>{if(!document.hidden&&heroVideo.paused) startHeroVideo()});
+}
 const all=document.querySelectorAll('.reveal');if('IntersectionObserver'in window){const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');io.unobserve(e.target)}}),{threshold:.11,rootMargin:'0px 0px -6% 0px'});all.forEach(e=>io.observe(e))}else all.forEach(e=>e.classList.add('show'));
 if(matchMedia('(pointer:fine)').matches){const dot=document.querySelector('#cursorDot'),ring=document.querySelector('#cursorRing'),target={x:innerWidth/2,y:innerHeight/2},pos={x:target.x,y:target.y},hover='a,button,[role="button"],input,textarea,select,[data-cursor="hover"]';addEventListener('mousemove',e=>{target.x=e.clientX;target.y=e.clientY;dot.style.transform=`translate3d(${e.clientX}px,${e.clientY}px,0) translate(-50%,-50%)`;ring.classList.toggle('active',!!e.target.closest?.(hover))},{passive:true});(function loop(){pos.x+=(target.x-pos.x)*0.14;pos.y+=(target.y-pos.y)*0.14;ring.style.transform=`translate3d(${pos.x}px,${pos.y}px,0) translate(-50%,-50%)`;requestAnimationFrame(loop)})()}
 })();
