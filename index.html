@@ -1,114 +1,240 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DEMO — Premium Gaming Cafe</title>
-<meta name="theme-color" content="#07070a">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="preload" as="image" href="https://demo-premium-gaming-cafe.lovable.app/assets/hero-DppPzM43.jpg"/><link rel="stylesheet" href="https://demo-premium-gaming-cafe.lovable.app/assets/styles-CdTfZlxZ.css" data-precedence="default"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oxanium:wght@500;600;700;800&amp;family=Barlow:wght@300;400;500;600&amp;display=swap" data-precedence="default"/><title>DEMO — Premium Gaming Cafe &amp; Esports Lounge</title><meta name="description" content="DEMO is a premium gaming cafe: RTX-class rigs, 360Hz displays, private squad rooms, weekly tournaments and open-late sessions."/><meta property="og:title" content="DEMO — Premium Gaming Cafe &amp; Esports Lounge"/><meta property="og:description" content="Elite rigs, cinematic lighting, weekly tournaments. Book your station at DEMO."/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><link rel="modulepreload" href="https://demo-premium-gaming-cafe.lovable.app/assets/index-DGmG70ka.js"/><link rel="modulepreload" href="https://demo-premium-gaming-cafe.lovable.app/assets/routes-C5skmJ2-.js"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><link rel="icon" href="https://demo-premium-gaming-cafe.lovable.app/favicon.ico" type="image/x-icon"/>
 <style>
-:root{--bg:#07070a;--bg2:#0a0a0e;--card:#0e0e13;--card2:#121218;--text:#f5f5f7;--muted:#9c9ca7;--muted2:#73737d;--line:#24242d;--red:#ed1238;--red2:#ff204d;--cyan:#76f2ef;--shadow:0 22px 80px rgba(0,0,0,.4);--max:1180px}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;overflow-x:hidden}body:before{content:"";position:fixed;inset:0;z-index:100;pointer-events:none;opacity:.18;background-image:radial-gradient(rgba(255,255,255,.06) .7px,transparent .7px);background-size:6px 6px;mask-image:linear-gradient(to bottom,transparent,#000 10%,#000 90%,transparent)}a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(var(--max),calc(100% - 44px));margin:auto}h1,h2,h3,.display{font-family:Rajdhani,Inter,sans-serif}.muted{color:var(--muted)}.kicker{color:var(--cyan);font-size:10px;font-weight:900;letter-spacing:.25em;text-transform:uppercase}
-.hero{min-height:780px;position:relative;overflow:hidden;display:grid;place-items:center;border-bottom:1px solid #1d1d23}.hero-bg{position:absolute;inset:0;background:radial-gradient(circle at 13% 18%,rgba(237,18,56,.25),transparent 27%),radial-gradient(circle at 82% 29%,rgba(118,242,239,.11),transparent 23%),linear-gradient(120deg,#17060b 0%,#08090e 42%,#080c11 72%,#07070a 100%)}.hero-bg:before{content:"";position:absolute;inset:-20%;background:repeating-linear-gradient(90deg,transparent 0 122px,rgba(255,255,255,.018) 122px 123px),linear-gradient(120deg,transparent 0 31%,rgba(237,18,56,.06) 31% 32%,transparent 32% 58%,rgba(118,242,239,.035) 58% 59%,transparent 59%);transform:perspective(700px) rotateX(52deg) scale(1.28);transform-origin:center bottom;filter:blur(4px)}.hero-bg:after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 40%,transparent 0 35%,rgba(0,0,0,.32) 72%),linear-gradient(180deg,rgba(0,0,0,.05),#07070a 95%)}.hero-shell{position:relative;z-index:2;width:min(1180px,calc(100% - 44px));display:grid;grid-template-columns:1.05fr .95fr;gap:68px;align-items:center;padding:80px 0 90px}.hero-copy{max-width:680px}.hero-eyebrow{display:flex;align-items:center;gap:12px;color:#a8a8b1;font-size:10px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;margin-bottom:22px}.live-dot{width:7px;height:7px;border-radius:50%;background:var(--red);box-shadow:0 0 18px rgba(237,18,56,.8);animation:pulse 1.8s ease-in-out infinite}@keyframes pulse{50%{opacity:.35;transform:scale(.78)}}.hero h1{font-size:clamp(62px,7.5vw,112px);line-height:.82;letter-spacing:-.055em;margin:0 0 28px}.hero h1 span{color:var(--red);text-shadow:0 0 38px rgba(237,18,56,.18)}.hero-sub{max-width:620px;color:#b4b4bd;font-size:16px;line-height:1.75;margin:0}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:34px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:0 22px;border-radius:7px;border:1px solid #292932;background:#0d0d12;color:#fff;font-size:10px;font-weight:900;letter-spacing:.14em;text-transform:uppercase;transition:.22s}.btn:hover{transform:translateY(-2px);border-color:#54545e}.btn-red{background:linear-gradient(180deg,#f31843,#c8072a);border-color:#ef143c;box-shadow:0 0 34px rgba(237,18,56,.24)}.hero-mini{display:flex;gap:24px;flex-wrap:wrap;margin-top:38px;padding-top:24px;border-top:1px solid rgba(255,255,255,.08)}.hero-mini div{display:grid;gap:4px}.hero-mini b{font-family:Rajdhani,sans-serif;font-size:22px}.hero-mini span{font-size:9px;color:#777782;text-transform:uppercase;letter-spacing:.16em}.hero-panel{min-height:480px;position:relative;border:1px solid #2b2b34;border-radius:18px;overflow:hidden;background:linear-gradient(155deg,rgba(255,255,255,.04),rgba(255,255,255,.01));box-shadow:0 32px 100px rgba(0,0,0,.5)}.hero-panel:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 70% 24%,rgba(118,242,239,.11),transparent 24%),radial-gradient(circle at 28% 68%,rgba(237,18,56,.18),transparent 32%),repeating-linear-gradient(90deg,transparent 0 74px,rgba(255,255,255,.018) 74px 75px)}.hero-panel:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(0,0,0,.38))}.panel-frame{position:absolute;inset:28px;z-index:2;border:1px solid rgba(255,255,255,.08);border-radius:12px;display:grid;place-items:center;overflow:hidden}.panel-frame:before{content:"";width:52%;height:42%;border:1px solid rgba(255,255,255,.08);box-shadow:0 0 0 28px rgba(237,18,56,.025),0 0 70px rgba(237,18,56,.13) inset;transform:skewY(-7deg);background:linear-gradient(135deg,rgba(237,18,56,.13),rgba(118,242,239,.04))}.panel-frame:after{content:"";position:absolute;width:74%;height:1px;background:linear-gradient(90deg,transparent,var(--red),transparent);box-shadow:0 0 18px rgba(237,18,56,.7);transform:rotate(-8deg)}.panel-label{position:absolute;z-index:4;left:34px;bottom:34px;display:grid;gap:7px}.panel-label b{font-family:Rajdhani,sans-serif;font-size:28px;letter-spacing:.02em}.panel-label span{color:#8d8d97;font-size:9px;letter-spacing:.2em;text-transform:uppercase}.panel-chip{position:absolute;z-index:4;right:32px;top:32px;border:1px solid #34343d;background:rgba(8,8,11,.82);border-radius:999px;padding:8px 11px;font-size:8px;font-weight:900;letter-spacing:.15em;text-transform:uppercase;color:#b9b9c1}
-.quickbar{position:relative;z-index:5;margin-top:-34px}.quickgrid{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid #282831;border-radius:12px;background:rgba(9,9,13,.94);backdrop-filter:blur(18px);overflow:hidden;box-shadow:0 24px 65px rgba(0,0,0,.34)}.quick{padding:21px 23px;border-right:1px solid #24242c;transition:.22s}.quick:last-child{border-right:0}.quick:hover{background:#111117}.quick small{display:block;color:var(--red);font-size:8px;font-weight:900;letter-spacing:.18em;text-transform:uppercase;margin-bottom:7px}.quick b{font-family:Rajdhani,sans-serif;font-size:19px}.quick span{float:right;color:#6e6e78}
-.section{padding:112px 0;position:relative}.section-head{display:flex;align-items:end;justify-content:space-between;gap:34px;margin-bottom:42px}.section-head h2{margin:10px 0 0;font-size:clamp(42px,5.2vw,68px);line-height:.9;letter-spacing:-.035em}.section-head p{max-width:430px;color:#96969f;font-size:13px;line-height:1.75;margin:0}
-.experience{border-bottom:1px solid #1f1f26}.bento{display:grid;grid-template-columns:1.15fr .85fr;grid-template-rows:280px 260px;gap:16px}.experience-card{position:relative;overflow:hidden;border:1px solid #292932;border-radius:13px;background:#0d0d12;transition:.26s}.experience-card:hover{transform:translateY(-3px);border-color:#52202d;box-shadow:0 20px 55px rgba(237,18,56,.08)}.experience-card.large{grid-row:1/3}.experience-card:before{content:"";position:absolute;inset:0;background:linear-gradient(145deg,rgba(255,255,255,.035),transparent 45%),radial-gradient(circle at 80% 20%,rgba(237,18,56,.16),transparent 31%)}.experience-card.alt:before{background:linear-gradient(145deg,rgba(255,255,255,.03),transparent 45%),radial-gradient(circle at 76% 30%,rgba(118,242,239,.10),transparent 29%)}.experience-card.purple:before{background:linear-gradient(145deg,rgba(255,255,255,.03),transparent 45%),radial-gradient(circle at 74% 30%,rgba(144,36,255,.18),transparent 30%)}.card-grid{position:absolute;inset:0;opacity:.35;background:repeating-linear-gradient(90deg,transparent 0 69px,rgba(255,255,255,.02) 69px 70px)}.card-copy{position:absolute;z-index:2;left:28px;right:28px;bottom:26px}.card-number{font-size:9px;letter-spacing:.2em;color:#787883;text-transform:uppercase;margin-bottom:10px}.card-copy h3{margin:0 0 9px;font-size:30px}.large .card-copy h3{font-size:43px}.card-copy p{max-width:430px;color:#aaaab3;font-size:12px;line-height:1.65;margin:0}.card-tags{display:flex;gap:7px;flex-wrap:wrap;margin-top:16px}.card-tags span{border:1px solid #303039;border-radius:999px;padding:6px 9px;font-size:8px;color:#9f9fa8;letter-spacing:.14em;text-transform:uppercase;background:rgba(8,8,11,.5)}.rig-art{position:absolute;right:8%;top:9%;width:48%;height:53%;border:1px solid rgba(255,255,255,.08);border-radius:9px;transform:perspective(600px) rotateY(-9deg) rotateX(4deg);background:linear-gradient(140deg,#171822,#090a0f);box-shadow:0 24px 70px rgba(0,0,0,.5)}.rig-art:before{content:"";position:absolute;inset:13%;border:1px solid rgba(237,18,56,.4);background:radial-gradient(circle at 50% 50%,rgba(237,18,56,.2),transparent 47%)}.rig-art:after{content:"";position:absolute;left:14%;right:14%;bottom:-20px;height:4px;background:#202129;box-shadow:0 10px 0 -1px #121319}
-.hardware{background:linear-gradient(180deg,#09090d,#07070a);border-bottom:1px solid #1f1f26}.spec-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.spec{min-height:185px;padding:25px;border:1px solid #292931;border-radius:11px;background:linear-gradient(145deg,#111117,#0b0b10);position:relative;overflow:hidden}.spec:after{content:"";position:absolute;width:85px;height:85px;border-radius:50%;right:-23px;top:-25px;background:radial-gradient(circle,rgba(237,18,56,.14),transparent 68%)}.spec small{display:block;color:#74747e;font-size:8px;letter-spacing:.18em;text-transform:uppercase;margin-bottom:24px}.spec strong{display:block;font-family:Rajdhani,sans-serif;font-size:40px;line-height:.9}.spec strong em{font-style:normal;color:var(--cyan);font-size:.62em}.spec p{color:#96969f;font-size:11px;line-height:1.55;margin:14px 0 0}.hardware-note{margin-top:16px;padding:17px 20px;border:1px dashed #303039;border-radius:9px;display:flex;align-items:center;justify-content:space-between;gap:20px;color:#8f8f99;font-size:11px}.hardware-note b{color:#d7d7dc;font-size:10px;letter-spacing:.12em;text-transform:uppercase}
-.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.feature{padding:26px;min-height:225px;border:1px solid #292931;border-radius:11px;background:#0d0d12;position:relative;overflow:hidden;transition:.25s}.feature:hover{transform:translateY(-3px);border-color:#541d2b}.feature:before{content:"";position:absolute;inset:0;background:linear-gradient(145deg,rgba(255,255,255,.025),transparent 48%)}.iconbox{position:relative;width:42px;height:42px;border:1px solid #303039;border-radius:8px;display:grid;place-items:center;color:var(--red);background:#13131a;font-family:Rajdhani,sans-serif;font-size:18px;font-weight:700}.feature h3{position:relative;font-family:Inter,sans-serif;font-size:16px;margin:23px 0 10px}.feature p{position:relative;color:#9c9ca6;font-size:12px;line-height:1.65;margin:0}.feature b{position:absolute;bottom:24px;left:26px;color:var(--cyan);font-size:8px;letter-spacing:.17em;text-transform:uppercase}
-.pricing{background:radial-gradient(circle at 50% 25%,rgba(237,18,56,.07),transparent 35%),#08080c;border-block:1px solid #202027}.price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.price-card{min-height:350px;padding:30px;border:1px solid #2a2a32;border-radius:12px;background:#0d0d12;position:relative;transition:.25s}.price-card:hover{transform:translateY(-3px);border-color:#5d2230}.price-card.popular{border-color:#8d1930;box-shadow:0 20px 60px rgba(237,18,56,.12)}.price-label{position:absolute;top:-11px;left:24px;padding:6px 11px;border-radius:999px;background:var(--red);font-size:8px;font-weight:900;letter-spacing:.16em;text-transform:uppercase}.price-card h3{font-family:Inter,sans-serif;font-size:16px;margin:0 0 8px}.price-card>p{font-size:12px;color:#95959f;margin:0}.amount{font-family:Rajdhani,sans-serif;font-size:48px;font-weight:700;margin:25px 0 20px}.amount small{font-family:Inter,sans-serif;font-size:11px;color:#8d8d97;font-weight:500}.checks{display:grid;gap:14px;border-top:1px solid #26262d;padding-top:20px}.check{font-size:11px;color:#c7c7cd}.check:before{content:"✓";color:var(--cyan);font-weight:900;margin-right:10px}.price-card .btn{position:absolute;left:30px;right:30px;bottom:28px}
-.events-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:16px}.event-main,.event-side{border:1px solid #292931;border-radius:12px;background:#0d0d12;overflow:hidden;position:relative}.event-main{min-height:410px;padding:34px}.event-main:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 25%,rgba(237,18,56,.20),transparent 32%),linear-gradient(145deg,rgba(255,255,255,.03),transparent 46%)}.event-main>*{position:relative}.event-main h3{font-size:48px;line-height:.9;margin:16px 0}.event-main p{max-width:520px;color:#a0a0aa;font-size:13px;line-height:1.7}.event-meta{display:flex;gap:8px;flex-wrap:wrap;margin:25px 0}.event-meta span{border:1px solid #32323a;background:#101016;border-radius:999px;padding:7px 10px;font-size:8px;letter-spacing:.14em;text-transform:uppercase;color:#aaaab4}.event-bracket{position:absolute;right:5%;bottom:4%;width:38%;height:45%;opacity:.5}.event-bracket i{position:absolute;height:1px;background:linear-gradient(90deg,var(--red),transparent);transform-origin:left}.event-bracket i:nth-child(1){width:95%;top:15%;left:0}.event-bracket i:nth-child(2){width:75%;top:45%;left:12%;transform:rotate(-18deg)}.event-bracket i:nth-child(3){width:68%;top:70%;left:21%;transform:rotate(13deg)}.event-side{display:grid;grid-template-rows:1fr 1fr}.event-row{padding:26px;border-bottom:1px solid #25252c;display:grid;grid-template-columns:auto 1fr auto;gap:18px;align-items:center}.event-row:last-child{border-bottom:0}.datebox{width:54px;height:54px;border:1px solid #34343d;border-radius:8px;display:grid;place-items:center;background:#121218;text-align:center}.datebox b{font-family:Rajdhani,sans-serif;font-size:22px;line-height:.8}.datebox span{font-size:7px;color:#7b7b85;letter-spacing:.15em;text-transform:uppercase}.event-row h4{margin:0 0 6px;font-size:13px}.event-row p{margin:0;color:#81818b;font-size:10px}.event-row>a{font-size:18px;color:var(--red)}
-.big-cta{padding:120px 0;position:relative;overflow:hidden;text-align:center}.big-cta:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 50%,rgba(237,18,56,.20),transparent 29%),linear-gradient(180deg,#07070a,#0b080c,#07070a)}.cta-inner{position:relative;max-width:760px;margin:auto;padding:0 20px}.cta-inner h2{font-size:clamp(52px,6vw,78px);line-height:.88;margin:16px 0}.cta-inner p{color:#a5a5ae;font-size:13px;line-height:1.7}.cta-inner .hero-actions{justify-content:center}
-footer{border-top:1px solid #24242b;background:#08080b;padding:48px 0 26px}.footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:48px}.footer-logo{display:flex;align-items:center;gap:11px;font-family:Rajdhani,sans-serif;font-size:18px;font-weight:700;letter-spacing:.18em;margin-bottom:14px}.logo-icon{width:28px;height:24px;position:relative;filter:drop-shadow(0 0 12px rgba(237,18,56,.35))}.logo-icon:before,.logo-icon:after{content:"";position:absolute;top:7px;width:16px;height:12px;border:3px solid var(--red)}.logo-icon:before{left:0;transform:skew(-14deg);border-radius:5px 3px 5px 3px}.logo-icon:after{right:0;transform:skew(14deg);border-radius:3px 5px 3px 5px}footer p{max-width:340px;color:#7f7f89;font-size:11px;line-height:1.65}footer h4{font-size:9px;text-transform:uppercase;letter-spacing:.2em;margin:0 0 14px}.footer-links{display:grid;gap:10px}.footer-links a{color:#91919b;font-size:11px;transition:.2s}.footer-links a:hover{color:#fff}.footer-box{border:1px solid #27272f;border-radius:9px;padding:17px}.footer-box b{font-size:11px}.footer-box span{display:block;color:#777781;font-size:9px;margin-top:7px;line-height:1.5}.footline{display:flex;justify-content:space-between;gap:20px;border-top:1px solid #1f1f25;margin-top:38px;padding-top:21px;color:#666670;font-size:9px}.whatsapp{position:fixed;right:24px;bottom:22px;z-index:500;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:#18d865;border:8px solid rgba(30,218,104,.12);box-shadow:0 0 35px rgba(24,216,101,.3);font-size:24px}.whatsapp span{transform:translateY(-1px)}.reveal{opacity:0;transform:translateY(22px);transition:.65s cubic-bezier(.2,.7,.2,1)}.reveal.show{opacity:1;transform:none}
-/* Custom mouse cursor like the reference video */
-@media (pointer:fine){
-  html,body,a,button{cursor:none!important}
-  .mouse-dot,.mouse-ring{position:fixed;left:0;top:0;pointer-events:none;z-index:99999}
-  .mouse-dot{
-    width:4px;height:4px;border-radius:50%;background:#fff;
-    transform:translate(-50%,-50%);
-    box-shadow:0 0 10px rgba(255,255,255,.7);
-  }
-  .mouse-ring{
-    width:28px;height:28px;
-    transform:translate(-50%,-50%) rotate(45deg);
-    transition:width .18s ease,height .18s ease,border-color .18s ease,background .18s ease;
-  }
-  .mouse-ring:before,.mouse-ring:after{
-    content:"";position:absolute;inset:0;
-    background:
-      linear-gradient(#fff,#fff) left top/7px 1px no-repeat,
-      linear-gradient(#fff,#fff) left top/1px 7px no-repeat,
-      linear-gradient(#fff,#fff) right top/7px 1px no-repeat,
-      linear-gradient(#fff,#fff) right top/1px 7px no-repeat,
-      linear-gradient(#fff,#fff) left bottom/7px 1px no-repeat,
-      linear-gradient(#fff,#fff) left bottom/1px 7px no-repeat,
-      linear-gradient(#fff,#fff) right bottom/7px 1px no-repeat,
-      linear-gradient(#fff,#fff) right bottom/1px 7px no-repeat;
-    opacity:.86;
-  }
-  .mouse-ring.hover{width:40px;height:40px}
-  .mouse-ring.hover:before{filter:drop-shadow(0 0 6px rgba(237,18,56,.9))}
-}
-@media(max-width:960px){.hero-shell{grid-template-columns:1fr;gap:38px;padding-top:95px}.hero-panel{min-height:400px}.quickgrid{grid-template-columns:1fr 1fr}.quick:nth-child(2){border-right:0}.quick:nth-child(-n+2){border-bottom:1px solid #24242c}.bento{grid-template-columns:1fr;grid-template-rows:auto}.experience-card,.experience-card.large{grid-row:auto;min-height:330px}.spec-grid{grid-template-columns:1fr 1fr}.feature-grid{grid-template-columns:1fr 1fr}.events-grid{grid-template-columns:1fr}.event-side{grid-template-columns:1fr 1fr;grid-template-rows:auto}.event-row{border-bottom:0;border-right:1px solid #25252c}.event-row:last-child{border-right:0}.footer-grid{grid-template-columns:1fr 1fr}.footer-grid>:first-child{grid-column:1/3}}
-@media(max-width:620px){.wrap,.hero-shell{width:min(100% - 28px,var(--max))}.hero{min-height:auto}.hero-shell{padding:72px 0 78px}.hero h1{font-size:58px}.hero-sub{font-size:14px}.hero-panel{min-height:320px}.panel-frame{inset:18px}.quickbar{margin-top:-22px}.quick{padding:18px}.section{padding:78px 0}.section-head{display:block}.section-head p{margin-top:20px}.spec-grid,.feature-grid,.price-grid{grid-template-columns:1fr}.hardware-note{display:block}.hardware-note b{display:block;margin-bottom:8px}.event-side{grid-template-columns:1fr}.event-row{border-right:0;border-bottom:1px solid #25252c}.event-row:last-child{border-bottom:0}.event-main{min-height:430px;padding:26px}.event-main h3{font-size:40px}.event-bracket{width:58%;opacity:.32}.price-card{min-height:340px}.footer-grid{grid-template-columns:1fr}.footer-grid>:first-child{grid-column:auto}.footline{flex-direction:column}.whatsapp{width:52px;height:52px;right:16px;bottom:16px}}
+	@font-face {
+		font-family: 'CameraPlainVariable';
+		src: url('https://cdn.gpteng.co/mcp-widgets/v1/fonts/CameraPlainVariable.woff2') format('woff2');
+		font-weight: 100 900;
+		font-style: normal;
+		font-display: swap;
+	}
+
+	#lovable-badge {
+		--badge-bg: #1b1b1b;
+		--badge-text: #c5c1b9;
+		--badge-text-hover: #dcdad5;
+		--badge-radius: 6px;
+		--badge-padding: 8px;
+		--badge-gap: 6px;
+		--badge-shadow: 
+			0 0 0 1px rgba(0, 0, 0, 0.88),
+			0 1px 0 0 rgba(0, 0, 0, 0.04),
+			0 2px 2px -1px rgba(0, 0, 0, 0.08),
+			0 4px 4px -2px rgba(0, 0, 0, 0.08),
+			0 8px 8px -4px rgba(0, 0, 0, 0.08),
+			0 16px 16px -8px rgba(0, 0, 0, 0.08);
+		--badge-transition-duration: 0.2s;
+		--badge-transition-easing: cubic-bezier(0.16, 1, 0.32, 1);
+		--focus-color: #575ECF;
+		--focus-offset: 2px;
+		--focus-width: 2px;
+		
+		position: fixed;
+		bottom: 12px;
+		right: 12px;
+		height: 24px;
+		display: flex;
+		align-items: center;
+		z-index: 1000000;
+		background-color: var(--badge-bg) !important;
+		color: var(--badge-text) !important;
+		border-radius: var(--badge-radius);
+		box-shadow: var(--badge-shadow) !important;
+		font-size: 12px;
+		font-family: CameraPlainVariable, "CameraPlainVariable Fallback", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+		font-weight: 400 !important;
+		text-transform: none !important;
+		font-feature-settings: normal !important;
+		transform: translateZ(0);
+		will-change: transform, opacity;
+	}
+
+	#lovable-badge-cta {
+		display: flex;
+		align-items: center;
+		gap: var(--badge-gap);
+		padding: 0 var(--badge-padding);
+		height: 100%;
+		color: inherit;
+		text-decoration: none;
+		white-space: nowrap;
+		border-radius: var(--badge-radius) 0 0 var(--badge-radius);
+		transition: 
+			background-color var(--badge-transition-duration) ease,
+			color var(--badge-transition-duration) ease,
+			transform 0.1s ease;
+	}
+
+	#lovable-badge-cta:hover {
+		background: rgba(255, 255, 255, 0.04);
+		color: var(--badge-text-hover);
+	}
+
+	#lovable-badge-cta:active {
+		transform: scale(0.98);
+	}
+
+	#lovable-badge-cta:focus {
+		outline: none;
+	}
+
+	#lovable-badge-cta:focus-visible {
+		outline: var(--focus-width) solid var(--focus-color);
+		outline-offset: var(--focus-offset);
+		z-index: 1;
+	}
+
+	#lovable-badge-text {
+		line-height: 1;
+	}
+
+	#lovable-badge-divider {
+		width: 1px;
+		height: 24px;
+		background-color: rgba(255, 255, 255, 0.04);
+		flex-shrink: 0;
+	}
+
+	#lovable-badge-close {
+		width: 24px;
+		height: 24px;
+		min-width: 24px;
+		min-height: 24px;
+		cursor: pointer;
+		background: none;
+		border: none;
+		padding: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 0 var(--badge-radius) var(--badge-radius) 0;
+		flex-shrink: 0;
+		transition: 
+			background-color var(--badge-transition-duration) ease,
+			transform 0.1s ease;
+	}
+
+	#lovable-badge-close:hover {
+		background: rgba(255, 255, 255, 0.04);
+	}
+
+	#lovable-badge-close:active {
+		transform: scale(0.92);
+	}
+
+	#lovable-badge-close:focus {
+		outline: none;
+	}
+
+	#lovable-badge-close:focus-visible {
+		outline: var(--focus-width) solid var(--focus-color);
+		outline-offset: calc(var(--focus-offset) * -1);
+		z-index: 1;
+	}
+
+	#lovable-badge-close svg path {
+		fill: var(--badge-text);
+		transition: fill var(--badge-transition-duration) ease;
+	}
+
+	#lovable-badge-close:hover svg path {
+		fill: var(--badge-text-hover);
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		#lovable-badge-cta,
+		#lovable-badge-close,
+		#lovable-badge-close svg path {
+			transition: none;
+		}
+		
+		#lovable-badge-cta:active,
+		#lovable-badge-close:active {
+			transform: none;
+		}
+	}
+
+	@media (prefers-contrast: high) {
+		#lovable-badge {
+			--badge-bg: #000;
+			--badge-text: #fff;
+			--badge-text-hover: #fff;
+			border: 2px solid currentColor;
+		}
+		
+		#lovable-badge-cta:focus-visible,
+		#lovable-badge-close:focus-visible {
+			outline-width: 3px;
+		}
+	}
 </style>
-</head>
-<body>
-<main id="home">
-<section class="hero"><div class="hero-bg"></div><div class="hero-shell"><div class="hero-copy reveal"><div class="hero-eyebrow"><span class="live-dot"></span> PREMIUM GAMING · BUILT FOR COMPETITION</div><h1>PLAY<br><span>WITHOUT</span><br>LIMITS.</h1><p class="hero-sub">High-refresh PC gaming, console sessions, racing, squad nights and competitive events — wrapped into one premium gaming experience.</p><div class="hero-actions"><a class="btn btn-red" href="#book">Book a station <span>›</span></a><a class="btn" href="#experience">Explore the setup <span>↘</span></a></div><div class="hero-mini"><div><b>240Hz</b><span>Competitive displays</span></div><div><b>RTX</b><span>Performance rigs</span></div><div><b>Low Ping</b><span>Optimized network</span></div></div></div><div class="hero-panel reveal"><div class="panel-chip">LIVE · READY TO PLAY</div><div class="panel-frame"></div><div class="panel-label"><b>THE GAMING FLOOR</b><span>POWER · PRECISION · COMMUNITY</span></div></div></div></section>
-<div class="quickbar"><div class="wrap quickgrid"><a class="quick" href="#experience"><small>01 · Play</small><b>Gaming Experience</b><span>↘</span></a><a class="quick" href="#hardware"><small>02 · Power</small><b>Hardware</b><span>↘</span></a><a class="quick" href="#pricing"><small>03 · Choose</small><b>Pricing</b><span>↘</span></a><a class="quick" href="#events"><small>04 · Compete</small><b>Events</b><span>↘</span></a></div></div>
-<section class="section experience" id="experience"><div class="wrap"><div class="section-head reveal"><div><div class="kicker">Designed around the game</div><h2>Choose your arena.</h2></div><p>Different games need different setups. The floor is designed so competitive players, casual squads and groups all get the right experience.</p></div><div class="bento"><article class="experience-card large reveal"><div class="card-grid"></div><div class="rig-art"></div><div class="card-copy"><div class="card-number">01 · Competitive zone</div><h3>PC GAMING</h3><p>High-refresh displays, performance hardware and responsive peripherals for ranked sessions, scrims and long nights with your squad.</p><div class="card-tags"><span>240Hz</span><span>RTX</span><span>Esports peripherals</span></div></div></article><article class="experience-card alt reveal"><div class="card-grid"></div><div class="card-copy"><div class="card-number">02 · Couch play</div><h3>CONSOLE LOUNGE</h3><p>Football, fighting games, co-op and local multiplayer on comfortable big-screen setups.</p><div class="card-tags"><span>Current gen</span><span>Multiplayer</span></div></div></article><article class="experience-card purple reveal"><div class="card-grid"></div><div class="card-copy"><div class="card-number">03 · Full send</div><h3>RACING & SIM</h3><p>Dedicated wheel setups for quick races, lap battles and competitive sessions.</p><div class="card-tags"><span>Wheel setup</span><span>Race nights</span></div></div></article></div></div></section>
-<section class="section hardware" id="hardware"><div class="wrap"><div class="section-head reveal"><div><div class="kicker">Hardware that keeps up</div><h2>No weak links.</h2></div><p>Fast visuals, responsive controls and stable networking matter more when the match gets serious.</p></div><div class="spec-grid"><div class="spec reveal"><small>Display</small><strong>240<em>Hz</em></strong><p>High-refresh competitive panels for smoother motion and faster reactions.</p></div><div class="spec reveal"><small>Graphics</small><strong>RTX</strong><p>Performance-focused gaming systems built for modern competitive titles.</p></div><div class="spec reveal"><small>Network</small><strong>LOW<em>PING</em></strong><p>Gaming-first networking for more stable online sessions.</p></div><div class="spec reveal"><small>Peripherals</small><strong>PRO</strong><p>Responsive mice, keyboards, headsets and controllers at every station.</p></div></div><div class="hardware-note reveal"><b>SETUPS MAY VARY BY STATION</b><span>Ask at the desk for the exact configuration before booking a specific system.</span></div></div></section>
-<section class="section" id="features"><div class="wrap"><div class="section-head reveal"><div><div class="kicker">More than a PC and chair</div><h2>Built for the session.</h2></div><p>The details around the game matter too — especially for long sessions, group bookings and competitive nights.</p></div><div class="feature-grid"><article class="feature reveal"><div class="iconbox">01</div><h3>Squad-ready seating</h3><p>Book nearby stations so your team stays together instead of scattered around the floor.</p><b>Group friendly</b></article><article class="feature reveal"><div class="iconbox">02</div><h3>Game-ready systems</h3><p>Popular competitive and multiplayer titles can be kept ready so you spend less time setting up.</p><b>Jump in faster</b></article><article class="feature reveal"><div class="iconbox">03</div><h3>Private bookings</h3><p>Reserve systems for birthdays, friend groups, practice sessions and smaller private events.</p><b>Advance booking</b></article><article class="feature reveal"><div class="iconbox">04</div><h3>Competitive nights</h3><p>Community brackets, challenges and special gaming nights designed around popular titles.</p><b>Weekly energy</b></article><article class="feature reveal"><div class="iconbox">05</div><h3>Long-session comfort</h3><p>A focused dark gaming environment with practical desk space and room to settle in.</p><b>Stay locked in</b></article><article class="feature reveal"><div class="iconbox">06</div><h3>Staff support</h3><p>Quick help with stations, accounts, peripherals and basic setup when you need it.</p><b>On-floor help</b></article></div></div></section>
-<section class="section pricing" id="pricing"><div class="wrap"><div class="section-head reveal"><div><div class="kicker">Simple pricing</div><h2>Pick your playtime.</h2></div><p>Demo rates for now. These cards are structured so your final hourly and package pricing can be dropped in cleanly.</p></div><div class="price-grid"><article class="price-card reveal"><h3>QUICK SESSION</h3><p>For a short walk-in gaming session.</p><div class="amount">₹150 <small>/ hour</small></div><div class="checks"><div class="check">Walk-in friendly</div><div class="check">Standard gaming station</div><div class="check">Subject to availability</div></div><a class="btn" href="#book">Choose session</a></article><article class="price-card popular reveal"><div class="price-label">Most popular</div><h3>POWER PACK</h3><p>Better value for players who come back often.</p><div class="amount">₹2,000 <small>/ pack</small></div><div class="checks"><div class="check">Lower effective hourly cost</div><div class="check">Use across multiple visits</div><div class="check">Great for regular squads</div></div><a class="btn btn-red" href="#book">Get the pack</a></article><article class="price-card reveal"><h3>GRIND PACK</h3><p>For regular players putting in serious hours.</p><div class="amount">₹6,500 <small>/ 100 hrs</small></div><div class="checks"><div class="check">Maximum long-term value</div><div class="check">Built for frequent sessions</div><div class="check">Long gaming balance</div></div><a class="btn" href="#book">Choose pack</a></article></div></div></section>
-<section class="section" id="events"><div class="wrap"><div class="section-head reveal"><div><div class="kicker">Community & competition</div><h2>More reason to show up.</h2></div><p>Tournaments and gaming nights turn the space into more than a place to rent a PC.</p></div><div class="events-grid"><article class="event-main reveal"><div class="kicker">Featured event</div><h3>WEEKEND<br>SHOWDOWN</h3><p>A compact community tournament format for competitive players, friend groups and anyone who wants to test themselves under pressure.</p><div class="event-meta"><span>Bracket play</span><span>Community event</span><span>Limited slots</span></div><a class="btn btn-red" href="#book">Join the next event ›</a><div class="event-bracket"><i></i><i></i><i></i></div></article><div class="event-side reveal"><div class="event-row"><div class="datebox"><b>FRI</b><span>Night</span></div><div><h4>Squad Night</h4><p>Group sessions and multiplayer focus.</p></div><a href="#book">↗</a></div><div class="event-row"><div class="datebox"><b>SAT</b><span>Prime</span></div><div><h4>Competitive Bracket</h4><p>Short-format tournament evening.</p></div><a href="#book">↗</a></div></div></div></div></section>
-<section class="big-cta" id="book"><div class="cta-inner reveal"><div class="kicker">Your station is waiting</div><h2>READY WHEN<br>YOU ARE.</h2><p>Choose your session, bring your squad and get straight into the game. Walk-ins depend on station availability.</p><div class="hero-actions"><a class="btn btn-red" href="#">Book a station ›</a><a class="btn" href="#pricing">View pricing</a></div></div></section>
-</main>
-<footer><div class="wrap"><div class="footer-grid"><div><div class="footer-logo"><span class="logo-icon"></span><span>DEMO</span></div><p>A premium gaming space focused on strong hardware, competitive sessions, group gaming and community events.</p></div><div><h4>Explore</h4><div class="footer-links"><a href="#home">Home</a><a href="#experience">Experience</a><a href="#hardware">Hardware</a><a href="#pricing">Pricing</a><a href="#events">Events</a></div></div><div><h4>Booking</h4><div class="footer-box"><b>Walk in or reserve ahead</b><span>Use booking for busy evenings, squad sessions and events.</span></div></div></div><div class="footline"><span>© 2026 DEMO. All rights reserved.</span><span>Privacy · Terms</span></div></div></footer>
-<div class="mouse-dot" aria-hidden="true"></div><div class="mouse-ring" aria-hidden="true"></div><a class="whatsapp" href="#" aria-label="WhatsApp"><span>◔</span></a>
+<script defer src="https://demo-premium-gaming-cafe.lovable.app/~flock.js" data-proxy-url="/~api/analytics"></script><meta name="twitter:title" content="DEMO — Premium Gaming Cafe &amp;amp; Esports Lounge"><meta name="twitter:description" content="Elite rigs, cinematic lighting, weekly tournaments. Book your station at DEMO."><meta property="og:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/a68b63b88fa00fae9ee3897c07a49444/id-preview-fe612185--d59f9a2b-6095-4c94-9d4a-0371e3214bd8.lovable.app-1787382372989.png"><meta name="twitter:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/a68b63b88fa00fae9ee3897c07a49444/id-preview-fe612185--d59f9a2b-6095-4c94-9d4a-0371e3214bd8.lovable.app-1787382372989.png"></head><body><!--$--><div class="grain relative min-h-screen overflow-x-hidden bg-background"><header class="relative flex min-h-[100svh] flex-col justify-between overflow-hidden"><div class="absolute inset-[-12%] -z-10"><img src="https://demo-premium-gaming-cafe.lovable.app/assets/hero-DppPzM43.jpg" alt="Dark gaming cafe interior lit in red" width="1920" height="1088" class="animate-drift h-full w-full object-cover opacity-90"/></div><div class="absolute inset-0 -z-10 bg-[radial-gradient(100%_80%_at_75%_35%,transparent,var(--background)_85%)]"></div><div class="absolute inset-0 -z-10 bg-gradient-to-b from-background/60 via-background/20 to-background"></div><div class="grid-veil absolute inset-0 -z-10 opacity-60"></div><div class="animate-pulse-glow absolute -left-40 top-1/3 -z-10 h-[38rem] w-[38rem] rounded-full bg-primary/20 blur-[140px]"></div><div class="animate-pulse-glow absolute -right-32 bottom-0 -z-10 h-[26rem] w-[26rem] rounded-full bg-accent/10 blur-[120px]"></div><div class="mx-auto flex w-full max-w-[92rem] items-center justify-between px-6 pt-8 md:px-12 md:pt-12"><div style="--reveal-delay:0ms" class="reveal  font-display text-xl font-extrabold tracking-[0.35em] text-foreground">DEMO</div><div style="--reveal-delay:120ms" class="reveal  hidden items-center gap-3 sm:flex"><span class="h-1.5 w-1.5 animate-pulse rounded-full bg-accent"></span><span class="font-display text-[0.7rem] uppercase tracking-[0.3em] text-muted-foreground">Open · 11am — 4am</span></div></div><div class="mx-auto grid w-full max-w-[92rem] gap-12 px-6 pb-20 md:grid-cols-12 md:px-12 md:pb-28"><div class="md:col-span-8"><div style="--reveal-delay:80ms" class="reveal  "><span class="font-display text-[0.7rem] uppercase tracking-[0.5em] text-primary">Gaming Cafe · Esports Lounge</span></div><h1 style="--reveal-delay:200ms" class="reveal  "><span class="mt-6 block font-display text-[clamp(3rem,10vw,9rem)] font-extrabold leading-[0.86] uppercase">Play in<span class="block text-ember">the dark.</span></span></h1><div style="--reveal-delay:340ms" class="reveal  "><p class="mt-8 max-w-md text-lg leading-relaxed text-muted-foreground">Twenty-four tuned rigs, black walls, red light. Built for people who take the next round seriously.</p></div><div style="--reveal-delay:460ms" class="reveal  mt-10 flex flex-wrap items-center gap-4"><a href="#book" class="sweep group relative inline-flex items-center gap-3 bg-[image:var(--gradient-ember)] px-8 py-4 font-display text-sm font-bold uppercase tracking-[0.2em] text-primary-foreground shadow-[var(--shadow-ember)] transition-transform duration-500 hover:-translate-y-1">Book a station<span class="transition-transform duration-500 group-hover:translate-x-1">→</span></a><a href="#pricing" class="border border-border px-8 py-4 font-display text-sm font-bold uppercase tracking-[0.2em] text-foreground transition-colors duration-500 hover:border-accent hover:text-accent">See rates</a></div></div><div style="--reveal-delay:620ms" class="reveal  self-end md:col-span-4"><div class="panel animate-float-soft ml-auto max-w-xs p-6 backdrop-blur-sm"><div class="hairline mb-5"></div><p class="font-display text-4xl font-bold text-foreground">360Hz</p><p class="mt-2 text-sm text-muted-foreground">every screen, every seat — no budget row</p><div class="mt-6 flex items-center gap-2 font-display text-[0.65rem] uppercase tracking-[0.3em] text-accent"><span class="h-px w-8 bg-accent"></span> Spec floor</div></div></div></div><div class="absolute bottom-0 left-0 right-0 h-px bg-[image:var(--gradient-blade)] opacity-50"></div></header><section class="relative mx-auto w-full max-w-[92rem] px-6 py-28 md:px-12 md:py-40"><div class="grid gap-14 md:grid-cols-12"><div class="md:col-span-4"><div style="--reveal-delay:0ms" class="reveal  "><span class="font-display text-[0.7rem] uppercase tracking-[0.5em] text-primary">Experiences</span><h2 class="mt-6 font-display text-[clamp(2.2rem,4.5vw,4rem)] font-extrabold uppercase leading-[0.95]">Four ways<span class="block text-muted-foreground">to lose track of time</span></h2></div></div><div class="md:col-span-8"><div class="grid gap-px bg-border sm:grid-cols-2"><div style="--reveal-delay:0ms" class="reveal  "><article class="sweep group relative h-full bg-background p-8 transition-colors duration-500 hover:bg-surface md:p-10"><div class="flex items-start justify-between"><span class="font-display text-xs tracking-[0.3em] text-primary">01</span><span class="font-display text-[0.65rem] uppercase tracking-[0.25em] text-muted-foreground">24 seats</span></div><h3 class="mt-16 font-display text-2xl font-bold uppercase md:text-3xl">Battle Stations</h3><p class="mt-3 max-w-xs text-sm leading-relaxed text-muted-foreground">Solo rigs tuned for competitive FPS. Zero input lag, zero excuses.</p><div class="mt-8 h-px w-0 bg-[image:var(--gradient-blade)] transition-all duration-700 group-hover:w-full"></div></article></div><div style="--reveal-delay:110ms" class="reveal  "><article class="sweep group relative h-full bg-background p-8 transition-colors duration-500 hover:bg-surface md:p-10"><div class="flex items-start justify-between"><span class="font-display text-xs tracking-[0.3em] text-primary">02</span><span class="font-display text-[0.65rem] uppercase tracking-[0.25em] text-muted-foreground">4 rooms</span></div><h3 class="mt-16 font-display text-2xl font-bold uppercase md:text-3xl">Squad Rooms</h3><p class="mt-3 max-w-xs text-sm leading-relaxed text-muted-foreground">Private five-seat pods with team comms and closed doors.</p><div class="mt-8 h-px w-0 bg-[image:var(--gradient-blade)] transition-all duration-700 group-hover:w-full"></div></article></div><div style="--reveal-delay:220ms" class="reveal  "><article class="sweep group relative h-full bg-background p-8 transition-colors duration-500 hover:bg-surface md:p-10"><div class="flex items-start justify-between"><span class="font-display text-xs tracking-[0.3em] text-primary">03</span><span class="font-display text-[0.65rem] uppercase tracking-[0.25em] text-muted-foreground">6 bays</span></div><h3 class="mt-16 font-display text-2xl font-bold uppercase md:text-3xl">Console Lounge</h3><p class="mt-3 max-w-xs text-sm leading-relaxed text-muted-foreground">Deep couches, 77&quot; OLED, controllers already charged.</p><div class="mt-8 h-px w-0 bg-[image:var(--gradient-blade)] transition-all duration-700 group-hover:w-full"></div></article></div><div style="--reveal-delay:330ms" class="reveal  "><article class="sweep group relative h-full bg-background p-8 transition-colors duration-500 hover:bg-surface md:p-10"><div class="flex items-start justify-between"><span class="font-display text-xs tracking-[0.3em] text-primary">04</span><span class="font-display text-[0.65rem] uppercase tracking-[0.25em] text-muted-foreground">2 rigs</span></div><h3 class="mt-16 font-display text-2xl font-bold uppercase md:text-3xl">Sim Bay</h3><p class="mt-3 max-w-xs text-sm leading-relaxed text-muted-foreground">Direct-drive wheel, load-cell pedals, triple-screen wrap.</p><div class="mt-8 h-px w-0 bg-[image:var(--gradient-blade)] transition-all duration-700 group-hover:w-full"></div></article></div></div></div></div></section><section class="relative overflow-hidden border-y border-border bg-surface/40"><div class="animate-pulse-glow absolute right-1/4 top-0 h-96 w-96 rounded-full bg-primary/15 blur-[130px]"></div><div class="mx-auto grid w-full max-w-[92rem] items-center gap-16 px-6 py-28 md:grid-cols-2 md:px-12 md:py-40"><div style="--reveal-delay:0ms" class="reveal  relative"><div class="relative"><div class="absolute -inset-4 bg-[image:var(--gradient-blade)] opacity-20 blur-2xl"></div><img src="https://demo-premium-gaming-cafe.lovable.app/assets/gear-B0yMCjHt.jpg" alt="Backlit mechanical keyboard and gaming mouse" width="1280" height="1280" loading="lazy" class="relative aspect-square w-full object-cover"/><div class="pointer-events-none absolute inset-0 overflow-hidden"><div class="animate-scan h-16 w-full bg-gradient-to-b from-transparent via-accent/15 to-transparent"></div></div></div></div><div><div style="--reveal-delay:0ms" class="reveal  "><span class="font-display text-[0.7rem] uppercase tracking-[0.5em] text-accent">Hardware</span><h2 class="mt-6 font-display text-[clamp(2.2rem,4.5vw,4rem)] font-extrabold uppercase leading-[0.95]">No weak <span class="text-ember">seat</span></h2><p class="mt-6 max-w-md leading-relaxed text-muted-foreground">Identical flagship builds across the floor. Whatever chair you take, the machine is the same.</p></div><div class="mt-12 grid grid-cols-2 gap-px bg-border"><div style="--reveal-delay:0ms" class="reveal  "><div class="group bg-background p-6 transition-colors duration-500 hover:bg-surface-2"><p class="font-display text-[0.65rem] uppercase tracking-[0.3em] text-muted-foreground">GPU</p><p class="mt-3 font-display text-2xl font-bold text-foreground transition-colors duration-500 group-hover:text-primary md:text-3xl">RTX 5080</p><p class="mt-1 text-xs text-muted-foreground">Class</p></div></div><div style="--reveal-delay:100ms" class="reveal  "><div class="group bg-background p-6 transition-colors duration-500 hover:bg-surface-2"><p class="font-display text-[0.65rem] uppercase tracking-[0.3em] text-muted-foreground">CPU</p><p class="mt-3 font-display text-2xl font-bold text-foreground transition-colors duration-500 group-hover:text-primary md:text-3xl">i9 / 7800X3D</p><p class="mt-1 text-xs text-muted-foreground">Tier</p></div></div><div style="--reveal-delay:200ms" class="reveal  "><div class="group bg-background p-6 transition-colors duration-500 hover:bg-surface-2"><p class="font-display text-[0.65rem] uppercase tracking-[0.3em] text-muted-foreground">Display</p><p class="mt-3 font-display text-2xl font-bold text-foreground transition-colors duration-500 group-hover:text-primary md:text-3xl">360Hz</p><p class="mt-1 text-xs text-muted-foreground">OLED 1440p</p></div></div><div style="--reveal-delay:300ms" class="reveal  "><div class="group bg-background p-6 transition-colors duration-500 hover:bg-surface-2"><p class="font-display text-[0.65rem] uppercase tracking-[0.3em] text-muted-foreground">Network</p><p class="mt-3 font-display text-2xl font-bold text-foreground transition-colors duration-500 group-hover:text-primary md:text-3xl">10 Gbps</p><p class="mt-1 text-xs text-muted-foreground">&lt;4ms ping</p></div></div></div></div></div></section><section class="mx-auto w-full max-w-[92rem] px-6 py-28 md:px-12 md:py-40"><div class="grid gap-16 md:grid-cols-12"><div class="md:col-span-5 md:pt-10"><div style="--reveal-delay:0ms" class="reveal  "><span class="font-display text-[0.7rem] uppercase tracking-[0.5em] text-primary">Atmosphere</span><h2 class="mt-6 font-display text-[clamp(2.2rem,4.5vw,4rem)] font-extrabold uppercase leading-[0.95]">Built for<span class="block text-muted-foreground">long nights</span></h2></div><div style="--reveal-delay:160ms" class="reveal  "><div class="hairline mt-10"></div><p class="mt-8 max-w-sm leading-relaxed text-muted-foreground">Every detail is tuned down — the light, the noise, the queue — so the only thing turned up is the game.</p></div></div><div class="md:col-span-7"><div class="flex flex-col"><div style="--reveal-delay:0ms" class="reveal  "><div class="group flex items-baseline gap-6 border-b border-border py-8 transition-all duration-500 hover:pl-4 md:gap-10"><span class="font-display text-xs text-primary">0<!-- -->1</span><div><h3 class="font-display text-xl font-bold uppercase transition-colors duration-500 group-hover:text-accent md:text-2xl">Cinematic Lighting</h3><p class="mt-2 max-w-md text-sm leading-relaxed text-muted-foreground">Zoned ambient wash tuned per room. No overhead glare.</p></div></div></div><div style="--reveal-delay:120ms" class="reveal  "><div class="group flex items-baseline gap-6 border-b border-border py-8 transition-all duration-500 hover:pl-4 md:gap-10"><span class="font-display text-xs text-primary">0<!-- -->2</span><div><h3 class="font-display text-xl font-bold uppercase transition-colors duration-500 group-hover:text-accent md:text-2xl">Acoustic Isolation</h3><p class="mt-2 max-w-md text-sm leading-relaxed text-muted-foreground">Panelled walls keep the lobby out of your comms.</p></div></div></div><div style="--reveal-delay:240ms" class="reveal  "><div class="group flex items-baseline gap-6 border-b border-border py-8 transition-all duration-500 hover:pl-4 md:gap-10"><span class="font-display text-xs text-primary">0<!-- -->3</span><div><h3 class="font-display text-xl font-bold uppercase transition-colors duration-500 group-hover:text-accent md:text-2xl">Night Kitchen</h3><p class="mt-2 max-w-md text-sm leading-relaxed text-muted-foreground">Espresso, ramen and cold cans until 4am.</p></div></div></div><div style="--reveal-delay:360ms" class="reveal  "><div class="group flex items-baseline gap-6 border-b border-border py-8 transition-all duration-500 hover:pl-4 md:gap-10"><span class="font-display text-xs text-primary">0<!-- -->4</span><div><h3 class="font-display text-xl font-bold uppercase transition-colors duration-500 group-hover:text-accent md:text-2xl">Coach Desk</h3><p class="mt-2 max-w-md text-sm leading-relaxed text-muted-foreground">VOD review with resident analysts every Sunday.</p></div></div></div></div></div></div></section><section id="pricing" class="relative overflow-hidden border-y border-border bg-[image:var(--gradient-veil)]"><div class="grid-veil absolute inset-0 opacity-40"></div><div class="relative mx-auto w-full max-w-[92rem] px-6 py-28 md:px-12 md:py-40"><div style="--reveal-delay:0ms" class="reveal  max-w-2xl"><span class="font-display text-[0.7rem] uppercase tracking-[0.5em] text-accent">Rates</span><h2 class="mt-6 font-display text-[clamp(2.2rem,4.5vw,4rem)] font-extrabold uppercase leading-[0.95]">Pay for time, <span class="text-ember">not tiers</span></h2></div><div class="mt-16 grid gap-6 lg:grid-cols-3"><div style="--reveal-delay:0ms" class="reveal  "><div class="panel sweep flex h-full flex-col p-8 md:p-10 "><h3 class="font-display text-sm uppercase tracking-[0.3em] text-muted-foreground">Drop In</h3><p class="mt-6 font-display text-5xl font-extrabold">₹149</p><p class="mt-1 text-sm text-muted-foreground">/ hour</p><ul class="mt-8 flex-1 space-y-3"><li class="flex items-start gap-3 text-sm text-muted-foreground"><span class="mt-2 h-px w-4 flex-none bg-accent"></span>Any open station</li><li class="flex items-start gap-3 text-sm text-muted-foreground"><span class="mt-2 h-px w-4 flex-none bg-accent"></span>Full game library</li><li class="flex items-start gap-3 text-sm text-muted-foreground"><span class="mt-2 h-px w-4 flex-none bg-accent"></span>Free peripherals</li></ul><a href="#book" class="mt-10 inline-flex w-full items-center justify-center py-4 font-display text-xs font-bold uppercase tracking-[0.25em] transition-all duration-500 border border-border text-foreground hover:border-accent hover:text-accent">Reserve</a></div></div><div style="--reveal-delay:140ms" class="reveal  "><div class="panel sweep flex h-full flex-col p-8 md:p-10 border-primary/50 shadow-[var(--shadow-ember)] lg:-translate-y-6"><span class="mb-6 w-fit bg-primary px-3 py-1 font-display text-[0.6rem] uppercase tracking-[0.3em] text-primary-foreground">Most booked</span><h3 class="font-display text-sm uppercase tracking-[0.3em] text-muted-foreground">Night Ops</h3><p class="mt-6 font-display text-5xl font-extrabold">₹899</p><p class="mt-1 text-sm text-muted-foreground">/ 10pm–6am</p><ul class="mt-8 flex-1 space-y-3"><li class="flex items-start gap-3 text-sm text-muted-foreground"><span class="mt-2 h-px w-4 flex-none bg-accent"></span>Locked station all night</li><li class="flex items-start gap-3 text-sm text-muted-foreground"><span class="mt-2 h-px w-4 flex-none bg-accent"></span>Squad room priority</li><li class="flex items-start gap-3 text-sm text-muted-foreground"><span class="mt-2 h-px w-4 flex-none bg-accent"></span>Kitchen credit ₹200</li><li class="flex items-start gap-3 text-sm text-muted-foreground"><span class="mt-2 h-px w-4 flex-none bg-accent"></span>Guest pass ×1</li></ul><a href="#book" class="mt-10 inline-flex w-full items-center justify-center py-4 font-display text-xs font-bold uppercase tracking-[0.25em] transition-all duration-500 bg-[image:var(--gradient-ember)] text-primary-foreground hover:-translate-y-1">Reserve</a></div></div><div style="--reveal-delay:280ms" class="reveal  "><div class="panel sweep flex h-full flex-col p-8 md:p-10 "><h3 class="font-display text-sm uppercase tracking-[0.3em] text-muted-foreground">Season Pass</h3><p class="mt-6 font-display text-5xl font-extrabold">₹4,999</p><p class="mt-1 text-sm text-muted-foreground">/ month</p><ul class="mt-8 flex-1 space-y-3"><li class="flex items-start gap-3 text-sm text-muted-foreground"><span class="mt-2 h-px w-4 flex-none bg-accent"></span>40 hours banked</li><li class="flex items-start gap-3 text-sm text-muted-foreground"><span class="mt-2 h-px w-4 flex-none bg-accent"></span>Tournament entry included</li><li class="flex items-start gap-3 text-sm text-muted-foreground"><span class="mt-2 h-px w-4 flex-none bg-accent"></span>Private locker</li></ul><a href="#book" class="mt-10 inline-flex w-full items-center justify-center py-4 font-display text-xs font-bold uppercase tracking-[0.25em] transition-all duration-500 border border-border text-foreground hover:border-accent hover:text-accent">Reserve</a></div></div></div></div></section><section class="relative overflow-hidden"><div class="absolute inset-[-10%] -z-10"><img src="https://demo-premium-gaming-cafe.lovable.app/assets/arena-Cs-IDj1C.jpg" alt="Esports arena with red stage lighting" width="1600" height="1008" loading="lazy" class="h-full w-full object-cover opacity-30"/></div><div class="absolute inset-0 -z-10 bg-gradient-to-r from-background via-background/85 to-background/40"></div><div class="mx-auto grid w-full max-w-[92rem] gap-16 px-6 py-28 md:grid-cols-12 md:px-12 md:py-40"><div class="md:col-span-5"><div style="--reveal-delay:0ms" class="reveal  "><span class="font-display text-[0.7rem] uppercase tracking-[0.5em] text-primary">Tournaments</span><h2 class="mt-6 font-display text-[clamp(2.2rem,4.5vw,4rem)] font-extrabold uppercase leading-[0.95]">Something&#x27;s<span class="block text-ember">always live</span></h2><p class="mt-6 max-w-sm leading-relaxed text-muted-foreground">Weekly brackets, cash pools and a room that actually cheers.</p></div></div><div class="md:col-span-7"><div style="--reveal-delay:0ms" class="reveal  "><div class="group grid grid-cols-[auto_1fr_auto] items-center gap-6 border-t border-border py-7 transition-colors duration-500 hover:bg-surface/60"><span class="font-display text-sm font-bold tracking-[0.2em] text-primary">TUE</span><div><h3 class="font-display text-xl font-bold uppercase md:text-2xl">Valorant Ladder</h3><p class="mt-1 text-sm text-muted-foreground">5v5 · 16 teams · ₹10k pool</p></div><span class="font-display text-lg text-muted-foreground transition-all duration-500 group-hover:translate-x-1 group-hover:text-accent">→</span></div></div><div style="--reveal-delay:110ms" class="reveal  "><div class="group grid grid-cols-[auto_1fr_auto] items-center gap-6 border-t border-border py-7 transition-colors duration-500 hover:bg-surface/60"><span class="font-display text-sm font-bold tracking-[0.2em] text-primary">THU</span><div><h3 class="font-display text-xl font-bold uppercase md:text-2xl">Retro Fight Night</h3><p class="mt-1 text-sm text-muted-foreground">Open bracket · walk-ins welcome</p></div><span class="font-display text-lg text-muted-foreground transition-all duration-500 group-hover:translate-x-1 group-hover:text-accent">→</span></div></div><div style="--reveal-delay:220ms" class="reveal  "><div class="group grid grid-cols-[auto_1fr_auto] items-center gap-6 border-t border-border py-7 transition-colors duration-500 hover:bg-surface/60"><span class="font-display text-sm font-bold tracking-[0.2em] text-primary">SAT</span><div><h3 class="font-display text-xl font-bold uppercase md:text-2xl">DEMO Open</h3><p class="mt-1 text-sm text-muted-foreground">Flagship series · streamed live</p></div><span class="font-display text-lg text-muted-foreground transition-all duration-500 group-hover:translate-x-1 group-hover:text-accent">→</span></div></div><div style="--reveal-delay:330ms" class="reveal  "><div class="group grid grid-cols-[auto_1fr_auto] items-center gap-6 border-t border-border py-7 transition-colors duration-500 hover:bg-surface/60"><span class="font-display text-sm font-bold tracking-[0.2em] text-primary">SUN</span><div><h3 class="font-display text-xl font-bold uppercase md:text-2xl">VOD Review</h3><p class="mt-1 text-sm text-muted-foreground">Coach desk · free for members</p></div><span class="font-display text-lg text-muted-foreground transition-all duration-500 group-hover:translate-x-1 group-hover:text-accent">→</span></div></div></div></div></section><section id="book" class="relative overflow-hidden border-t border-border"><div class="animate-pulse-glow absolute left-1/2 top-1/2 h-[40rem] w-[40rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary/20 blur-[150px]"></div><div class="grid-veil absolute inset-0 opacity-50"></div><div class="relative mx-auto w-full max-w-[92rem] px-6 py-32 text-center md:px-12 md:py-48"><div style="--reveal-delay:0ms" class="reveal  "><span class="font-display text-[0.7rem] uppercase tracking-[0.5em] text-accent">Reserve</span></div><h2 style="--reveal-delay:140ms" class="reveal  "><span class="mt-8 block font-display text-[clamp(2.8rem,9vw,8rem)] font-extrabold uppercase leading-[0.85]">Take the <span class="text-ember">seat</span></span></h2><div style="--reveal-delay:280ms" class="reveal  "><p class="mx-auto mt-8 max-w-md leading-relaxed text-muted-foreground">Walk-ins welcome, but the good stations go fast after 8pm.</p></div><div style="--reveal-delay:400ms" class="reveal  mt-12 flex flex-wrap justify-center gap-4"><a href="mailto:play@demo.gg" class="sweep group inline-flex items-center gap-3 bg-[image:var(--gradient-ember)] px-10 py-5 font-display text-sm font-bold uppercase tracking-[0.25em] text-primary-foreground shadow-[var(--shadow-ember)] transition-transform duration-500 hover:-translate-y-1">Book now<span class="transition-transform duration-500 group-hover:translate-x-1">→</span></a><a href="tel:+910000000000" class="border border-border px-10 py-5 font-display text-sm font-bold uppercase tracking-[0.25em] transition-colors duration-500 hover:border-accent hover:text-accent">Call the desk</a></div></div></section><footer class="border-t border-border"><div class="mx-auto flex w-full max-w-[92rem] flex-col gap-6 px-6 py-12 md:flex-row md:items-center md:justify-between md:px-12"><span class="font-display text-lg font-extrabold tracking-[0.35em]">DEMO</span><p class="text-xs uppercase tracking-[0.25em] text-muted-foreground">Open 11am — 4am · play@demo.gg</p><p class="text-xs text-muted-foreground">© <!-- -->2026<!-- --> DEMO</p></div></footer></div><script>(function(a,f){let l;try{l=JSON.parse(sessionStorage.getItem(a)||"{}")}catch{return}const n=l?.[f||history.state?.__TSR_key];let c=!1;for(const t in n){const e=n[t],o=e?.scrollX,s=e?.scrollY;if(Number.isFinite(o)&&Number.isFinite(s)){if(t==="window")scrollTo(o,s),c=!0;else if(t)try{const r=document.querySelector(t);r&&(r.scrollLeft=o,r.scrollTop=s)}catch{}}}if(c)return;const i=location.hash.slice(1);if(i){const t=history.state?.__hashScrollIntoViewOptions??!0;if(t){const e=document.getElementById(i);e&&e.scrollIntoView(t)}return}scrollTo(0,0)})("tsr-scroll-restoration-v1_3");document.currentScript.remove()</script><!--/$--><script class="$tsr" id="$tsr-stream-barrier">(self.$R=self.$R||{})["tsr"]=[];self.$_TSR={h(){this.hydrated=!0,this.c()},e(){this.streamEnded=!0,this.c()},c(){this.hydrated&&this.streamEnded&&(delete self.$_TSR,delete self.$R.tsr)},p(e){this.initialized?e():this.buffer.push(e)},buffer:[]};$_TSR.router=($R=>$R[0]={manifest:$R[1]={routes:$R[2]={__root__:$R[3]={preloads:$R[4]=["/assets/index-DGmG70ka.js"],scripts:$R[5]=[$R[6]={attrs:$R[7]={type:"module",async:!0,src:"/assets/index-DGmG70ka.js"}}]},"/":$R[8]={preloads:$R[9]=["/assets/routes-C5skmJ2-.js"]}}},matches:$R[10]=[$R[11]={i:"__root__ ",u:1787382648984,s:"success",ssr:!0},$R[12]={i:"  ",u:1787382648984,s:"success",ssr:!0}],lastMatchId:"  "})($R["tsr"]);$_TSR.e();document.currentScript.remove()</script><script type="module" async="" src="https://demo-premium-gaming-cafe.lovable.app/assets/index-DGmG70ka.js"></script>
+<aside
+	id="lovable-badge"
+	role="complementary"
+	dir="ltr"
+	lang="en"
+	aria-label="Edit with Lovable">
+	<a
+		id="lovable-badge-cta" 
+		target="_blank" 
+		href="https://lovable.dev/projects/lovp_670hrrp37b9sdt4egt4a3y3rya?utm_source=lovable-badge"
+		rel="noopener nofollow"
+		aria-label="Edit with Lovable">
+		<span id="lovable-badge-text">Edit with</span>
+		<svg xmlns="http://www.w3.org/2000/svg" width="52" height="16" fill="none" viewBox="0 0 52 16">
+  <path fill="#FCFBF8" fill-rule="evenodd" d="M20.318 5.25c.643 0 1.206.14 1.69.418a2.81 2.81 0 0 1 1.118 1.191c.266.513.4 1.115.4 1.807s-.134 1.296-.4 1.812a2.81 2.81 0 0 1-1.118 1.193c-.484.278-1.047.418-1.69.418s-1.208-.14-1.695-.418a2.85 2.85 0 0 1-1.125-1.193c-.262-.516-.393-1.12-.393-1.812s.131-1.294.393-1.807a2.848 2.848 0 0 1 1.125-1.191c.487-.279 1.052-.418 1.695-.418Zm0 1.425c-.27 0-.504.076-.7.228-.193.147-.34.37-.443.67-.102.295-.153.66-.153 1.093 0 .435.05.801.153 1.1.102.3.25.524.443.676.196.147.43.22.7.22.27 0 .502-.073.694-.22.193-.152.341-.375.443-.67.103-.299.153-.667.153-1.106 0-.65-.112-1.145-.337-1.481a1.08 1.08 0 0 0-.953-.51ZM32.7 5.25c.61 0 1.127.1 1.549.3.422.197.74.48.953.849.217.368.325.809.325 1.32v2.704c0 .29.02.562.062.812.044.245.108.4.19.466V12h-1.935a5.895 5.895 0 0 1-.105-.684 7.745 7.745 0 0 1-.02-.228 2.293 2.293 0 0 1-.151.203c-.205.242-.47.437-.793.584-.32.143-.685.215-1.094.215-.406 0-.77-.08-1.094-.24a1.845 1.845 0 0 1-.756-.682 1.984 1.984 0 0 1-.27-1.045c0-.606.178-1.069.535-1.388.356-.324.87-.534 1.542-.633l1.125-.16c.225-.032.403-.074.534-.123a.622.622 0 0 0 .288-.196.549.549 0 0 0 .093-.327.65.65 0 0 0-.11-.367.702.702 0 0 0-.32-.27c-.14-.07-.31-.105-.51-.105-.32 0-.576.083-.768.251-.193.164-.298.39-.314.676h-1.923c.016-.434.147-.82.393-1.155.25-.34.596-.604 1.039-.792.442-.189.954-.283 1.535-.283Zm.99 3.498a.98.98 0 0 1-.215.14 2.49 2.49 0 0 1-.584.178l-.473.092c-.315.061-.553.156-.713.283-.155.127-.233.305-.233.534 0 .23.084.412.252.547.168.135.383.203.645.203s.494-.058.694-.173c.201-.118.355-.282.461-.49.11-.21.166-.448.166-.714v-.6Zm4.526-2.375c.065-.125.138-.243.221-.349.197-.25.437-.44.719-.571.282-.135.6-.203.952-.203.528 0 .988.138 1.377.412.389.275.688.67.896 1.186.21.512.314 1.12.314 1.824 0 .7-.107 1.309-.32 1.825-.213.512-.518.906-.915 1.18-.393.275-.854.412-1.383.412-.352 0-.667-.062-.946-.184a1.832 1.832 0 0 1-.7-.554 2.2 2.2 0 0 1-.234-.383V12h-1.843V3h1.862v3.373Zm1.284.296c-.274 0-.51.085-.707.253-.192.163-.338.397-.436.7a3.376 3.376 0 0 0-.148 1.05c0 .406.05.759.148 1.058.098.299.243.53.436.694.197.164.433.246.707.246.279 0 .512-.082.7-.246.193-.164.336-.395.43-.694.099-.3.148-.652.148-1.058 0-.405-.05-.757-.147-1.056-.095-.299-.238-.53-.43-.694a1.015 1.015 0 0 0-.7-.253Zm9.416-1.419c.602 0 1.136.131 1.604.393.466.262.829.643 1.086 1.143.263.5.394 1.097.394 1.794 0 .25-.002.449-.006.596H47.51c.018.288.071.538.164.75a1.3 1.3 0 0 0 .491.596c.214.13.465.196.757.196.319 0 .583-.082.792-.246.209-.167.34-.403.393-.706h1.862a2.48 2.48 0 0 1-.485 1.235 2.54 2.54 0 0 1-1.051.805c-.439.188-.949.283-1.53.283-.655 0-1.225-.125-1.708-.375a2.672 2.672 0 0 1-1.13-1.143c-.267-.508-.4-1.137-.4-1.887 0-.712.14-1.327.418-1.843a2.86 2.86 0 0 1 1.155-1.186c.491-.27 1.051-.405 1.678-.405Zm-.044 1.345c-.274 0-.516.068-.725.203a1.29 1.29 0 0 0-.479.59 2.045 2.045 0 0 0-.132.498h2.562a1.873 1.873 0 0 0-.138-.602 1.061 1.061 0 0 0-.418-.516 1.243 1.243 0 0 0-.67-.173Z" clip-rule="evenodd"/>
+  <path fill="#FCFBF8" d="m26.605 9.995 1.342-4.566h1.924L27.628 12h-2.07l-2.33-6.57h1.98l1.397 4.565Zm-13.013.143h2.256c1.632 0 1.421 1.837 1.418 1.861h-5.603V3h1.93v7.138Zm31.516 1.861h-1.862V3h1.862v8.999Z"/>
+  <path fill="url(#a)" fill-rule="evenodd" d="M2.7 3c1.492 0 2.7 1.192 2.7 2.663v1.012h.9c1.49 0 2.7 1.192 2.7 2.662S7.791 12 6.3 12H0V5.663C0 4.193 1.209 3 2.7 3Z" clip-rule="evenodd"/>
+  <defs>
+    <radialGradient id="a" cx="0" cy="0" r="1" gradientTransform="matrix(-1.54236 7.07838 -10.231 -2.15602 4.627 5.022)" gradientUnits="userSpaceOnUse">
+      <stop offset=".106" stop-color="#FE7B02"/>
+      <stop offset=".394" stop-color="#FE3F21"/>
+      <stop offset=".608" stop-color="#F858BC"/>
+      <stop offset=".929" stop-color="#575ECF"/>
+    </radialGradient>
+  </defs>
+</svg>
+
+
+	</a>
+	
+	<span id="lovable-badge-divider" aria-hidden="true"></span>
+	
+	<button 
+		id="lovable-badge-close"
+		aria-label="Dismiss"
+		title="Dismiss"
+		type="button">
+		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16" aria-hidden="true">
+			<path d="M10.646 4.646a.5.5 0 1 1 .707.708L8.707 8l2.646 2.646a.5.5 0 1 1-.707.707L8 8.707l-2.646 2.646a.5.5 0 1 1-.708-.707L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708L8 7.293l2.646-2.647Z"/>
+		</svg>
+	</button>
+</aside>
 <script>
-const reveal=new IntersectionObserver(entries=>{
-  entries.forEach(e=>{
-    if(e.isIntersecting){
-      e.target.classList.add('show');
-      reveal.unobserve(e.target);
-    }
-  });
-},{threshold:.08});
-document.querySelectorAll('.reveal').forEach(el=>reveal.observe(el));
+	// Don't show the lovable-badge if the page is in an iframe or if it's being rendered by puppeteer (screenshot service)
+	if (window.self !== window.top || navigator.userAgent.includes('puppeteer')) {
+		var badge = document.getElementById('lovable-badge');
+		if (badge) {
+			badge.style.display = 'none';
+		}
+	}
 
-document.querySelectorAll('.location-card,.feature,.price-card,.next').forEach(card=>{
-  card.addEventListener('mousemove',e=>{
-    const r=card.getBoundingClientRect();
-    card.style.setProperty('--mx',((e.clientX-r.left)/r.width*100)+'%');
-    card.style.setProperty('--my',((e.clientY-r.top)/r.height*100)+'%');
-  });
-});
-
-const mouseDot=document.querySelector('.mouse-dot');
-const mouseRing=document.querySelector('.mouse-ring');
-if(matchMedia('(pointer:fine)').matches && mouseDot && mouseRing){
-  let mx=0,my=0,rx=0,ry=0;
-  document.addEventListener('mousemove',e=>{
-    mx=e.clientX;my=e.clientY;
-    mouseDot.style.left=mx+'px';
-    mouseDot.style.top=my+'px';
-  });
-  const follow=()=>{
-    rx+=(mx-rx)*.18;
-    ry+=(my-ry)*.18;
-    mouseRing.style.left=rx+'px';
-    mouseRing.style.top=ry+'px';
-    requestAnimationFrame(follow);
-  };
-  follow();
-  document.querySelectorAll('a,button,.location-card,.feature,.price-card,.next').forEach(el=>{
-    el.addEventListener('mouseenter',()=>mouseRing.classList.add('hover'));
-    el.addEventListener('mouseleave',()=>mouseRing.classList.remove('hover'));
-  });
-}
+	// Add click event listener to close button with animation
+	var closeButton = document.getElementById('lovable-badge-close');
+	if (closeButton) {
+		closeButton.addEventListener('click', function(event) {
+			event.preventDefault();
+			event.stopPropagation();
+			var badge = document.getElementById('lovable-badge');
+			if (badge) {
+				badge.classList.add('closing');
+				setTimeout(function() {
+					if (badge) {
+						badge.style.display = 'none';
+					}
+				}, 240);
+			}
+		});
+	}
 </script>
-</body>
-</html>
+</body></html>
