@@ -73,11 +73,6 @@ button,input,select{font:inherit}button{color:inherit}.app{display:grid;grid-tem
     <button class="navitem" data-view="pos"><span>▤</span><span>POS & Orders</span></button>
     <button class="navitem" data-view="wallet"><span>◇</span><span>Wallet & Passes</span></button>
     <button class="navitem" data-view="kitchen"><span>▥</span><span>Kitchen Queue</span><span class="badge">4</span></button>
-    <button class="navitem" data-view="tournaments"><span>♜</span><span>Tournaments</span></button>
-    <button class="navitem" data-view="inventory"><span>▣</span><span>Inventory</span><span class="badge">3</span></button>
-    <button class="navitem" data-view="maintenance"><span>⚙</span><span>Maintenance</span><span class="badge">2</span></button>
-    <button class="navitem" data-view="staff"><span>◌</span><span>Staff & Shifts</span></button>
-    <button class="navitem" data-view="reports"><span>↗</span><span>Reports</span></button>
   </div>
   <div class="navgroup"><div class="navlabel">System</div>
     <a class="navitem" href="booking.html"><span>↗</span><span>Customer booking</span></a>
@@ -235,76 +230,6 @@ button,input,select{font:inherit}button{color:inherit}.app{display:grid;grid-tem
       <tr><td>#FD-218</td><td>Counter</td><td>Energy Drink x2</td><td>12m</td><td><span class="pill green"><i></i>Ready</span></td><td><button class="filter kitchenAdvance">Deliver</button></td></tr>
       </tbody></table></div></div>
     </section>
-
-    <section class="view" id="tournaments">
-      <div class="pagehead"><div><h1>Tournaments</h1><p>Registrations, brackets, matches and prize pools.</p></div><div class="headbuttons"><button class="btn">Leaderboard</button><button class="btn primary" id="createTournament">+ Create tournament</button></div></div>
-      <div class="sectiongrid">
-        <div class="card mini"><h3>Valorant Friday Cup</h3><p>16 teams · 5v5 · 26 Sep, 7:00 PM</p><div class="bigmetric">₹12,500</div><div class="foot">Prize pool · 14/16 teams joined</div></div>
-        <div class="card mini"><h3>FC 26 Knockout</h3><p>1v1 · Console Area · 28 Sep</p><div class="bigmetric">24</div><div class="foot">Players registered</div></div>
-        <div class="card mini"><h3>CS2 Night League</h3><p>Weekly league · Premium Row</p><div class="bigmetric">8</div><div class="foot">Teams · Round 3</div></div>
-      </div>
-      <div class="card" style="margin-top:14px"><div class="cardhead"><strong>Next matches</strong><span>Auto-generated bracket demo</span></div><div class="tablewrap"><table class="table"><thead><tr><th>Match</th><th>Team A</th><th>Team B</th><th>Time</th><th>Zone</th><th>Status</th></tr></thead><tbody>
-      <tr><td>Quarterfinal 1</td><td>Nova Five</td><td>Velocity</td><td>7:00 PM</td><td>Premium Row</td><td><span class="pill purple"><i></i>Scheduled</span></td></tr>
-      <tr><td>Quarterfinal 2</td><td>Hexa</td><td>Vanguard</td><td>8:00 PM</td><td>Premium Row</td><td><span class="pill purple"><i></i>Scheduled</span></td></tr>
-      </tbody></table></div></div>
-    </section>
-
-    <section class="view" id="inventory">
-      <div class="pagehead"><div><h1>Inventory</h1><p>Cafe stock plus spare peripherals and hardware.</p></div><div class="headbuttons"><button class="btn">Purchase log</button><button class="btn primary" id="stockAdjust">Adjust stock</button></div></div>
-      <div class="stats">
-        <div class="stat"><div class="label">SKU count</div><div class="value">48</div><div class="foot"><span>Food + hardware</span></div></div>
-        <div class="stat"><div class="label">Low stock</div><div class="value">3</div><div class="foot"><span class="down">Needs attention</span></div></div>
-        <div class="stat"><div class="label">Stock value</div><div class="value">₹82,640</div><div class="foot"><span>Estimated cost</span></div></div>
-        <div class="stat"><div class="label">Used today</div><div class="value">67</div><div class="foot"><span>Units across POS</span></div></div>
-      </div>
-      <div class="card" style="margin-top:14px"><div class="tablewrap"><table class="table"><thead><tr><th>Item</th><th>Category</th><th>In stock</th><th>Reorder at</th><th>Status</th></tr></thead><tbody>
-      <tr><td>Cold Coffee</td><td>Drinks</td><td>8</td><td>12</td><td><span class="pill red"><i></i>Low</span></td></tr>
-      <tr><td>Energy Drink</td><td>Drinks</td><td>14</td><td>10</td><td><span class="pill green"><i></i>Healthy</span></td></tr>
-      <tr><td>Gaming Mouse Spare</td><td>Hardware</td><td>2</td><td>3</td><td><span class="pill red"><i></i>Low</span></td></tr>
-      <tr><td>Headset Spare</td><td>Hardware</td><td>4</td><td>2</td><td><span class="pill green"><i></i>Healthy</span></td></tr>
-      </tbody></table></div></div>
-    </section>
-
-    <section class="view" id="maintenance">
-      <div class="pagehead"><div><h1>Maintenance</h1><p>Station incidents, equipment health and repair history.</p></div><div class="headbuttons"><button class="btn">Resolved</button><button class="btn primary" id="reportIssue">+ Report issue</button></div></div>
-      <div class="card"><div class="tablewrap"><table class="table"><thead><tr><th>Incident</th><th>Station</th><th>Equipment</th><th>Reported</th><th>Assigned</th><th>Status</th></tr></thead><tbody>
-      <tr><td>#MT-094</td><td>PC-18</td><td>Controller USB</td><td>18m ago</td><td>Rahul · Tech</td><td><span class="pill yellow"><i></i>Diagnosing</span></td></tr>
-      <tr><td>#MT-093</td><td>PC-14</td><td>Keyboard switch</td><td>41m ago</td><td>Rahul · Tech</td><td><span class="pill purple"><i></i>Repairing</span></td></tr>
-      <tr><td>#MT-090</td><td>Console-02</td><td>HDMI cable</td><td>Yesterday</td><td>Akash · Manager</td><td><span class="pill green"><i></i>Resolved</span></td></tr>
-      </tbody></table></div></div>
-    </section>
-
-    <section class="view" id="staff">
-      <div class="pagehead"><div><h1>Staff & Shifts</h1><p>Roles, attendance, cash drawer and shift settlement.</p></div><div class="headbuttons"><button class="btn">Shift history</button><button class="btn primary" id="clockShift">Clock in / out</button></div></div>
-      <div class="sectiongrid">
-        <div class="card mini"><h3>Current shift</h3><p>Evening · 2:00 PM — 11:00 PM</p><div class="bigmetric">5 staff</div><div class="foot">All positions covered</div></div>
-        <div class="card mini"><h3>Cash drawer</h3><p>Opening float ₹5,000</p><div class="bigmetric">₹12,840</div><div class="foot">Expected cash now</div></div>
-        <div class="card mini"><h3>Shift sales</h3><p>Sessions + POS + recharge</p><div class="bigmetric">₹31,260</div><div class="foot"><span class="up">+11%</span> vs last Tuesday</div></div>
-      </div>
-      <div class="card" style="margin-top:14px"><div class="tablewrap"><table class="table"><thead><tr><th>Staff</th><th>Role</th><th>Clocked in</th><th>Current task</th><th>Status</th></tr></thead><tbody>
-      <tr><td>Akash Patil</td><td>Manager</td><td>1:54 PM</td><td>Counter</td><td><span class="pill green"><i></i>On shift</span></td></tr>
-      <tr><td>Rahul Joshi</td><td>Technician</td><td>2:02 PM</td><td>PC-18 incident</td><td><span class="pill yellow"><i></i>Busy</span></td></tr>
-      <tr><td>Neha S.</td><td>Counter Staff</td><td>2:00 PM</td><td>Bookings</td><td><span class="pill green"><i></i>On shift</span></td></tr>
-      </tbody></table></div></div>
-    </section>
-
-    <section class="view" id="reports">
-      <div class="pagehead"><div><h1>Reports</h1><p>Revenue, utilization and customer performance.</p></div><div class="headbuttons"><button class="btn">This month ▾</button><button class="btn primary" id="exportBtn">Export report</button></div></div>
-      <div class="sectiongrid">
-        <div class="card mini"><h3>Gross revenue</h3><p>September to date.</p><div class="bigmetric">₹4.82L</div><div class="foot"><span class="up">+18.2%</span> vs August</div></div>
-        <div class="card mini"><h3>Station utilization</h3><p>Average occupied capacity.</p><div class="bigmetric">68.4%</div><div class="foot"><span class="up">+5.7%</span> vs August</div></div>
-        <div class="card mini"><h3>Avg. customer spend</h3><p>Session + wallet + F&B.</p><div class="bigmetric">₹684</div><div class="foot"><span class="up">+₹42</span> vs August</div></div>
-      </div>
-      <div class="grid2">
-        <div class="card"><div class="cardhead"><strong>Revenue mix</strong><span>September</span></div><div class="cardbody barlist">
-          <div class="barrow"><span>PC sessions</span><div class="bar"><i style="width:92%"></i></div><strong>55%</strong></div>
-          <div class="barrow"><span>Food & drinks</span><div class="bar"><i style="width:56%"></i></div><strong>23%</strong></div>
-          <div class="barrow"><span>Console / sim</span><div class="bar"><i style="width:40%"></i></div><strong>13%</strong></div>
-          <div class="barrow"><span>Memberships</span><div class="bar"><i style="width:29%"></i></div><strong>9%</strong></div>
-        </div></div>
-        <div class="card"><div class="cardhead"><strong>Peak hours</strong><span>Avg utilization</span></div><div class="cardbody"><div class="bigmetric">8 PM — 11 PM</div><p style="color:var(--muted);font-size:10px;line-height:1.7">Weekend evenings reach 94% utilization. Consider dynamic pricing or more advance-booking inventory during this window.</p></div></div>
-      </div>
-    </section>
   </div>
 </main>
 </div>
@@ -314,7 +239,6 @@ button,input,select{font:inherit}button{color:inherit}.app{display:grid;grid-tem
   <button data-view="stations"><span class="micon">▦</span><span>PCs</span></button>
   <button data-view="bookings"><span class="micon">◷</span><span>Bookings</span></button>
   <button data-view="pos"><span class="micon">☕</span><span>POS</span></button>
-  <button data-view="reports"><span class="micon">↗</span><span>Reports</span></button>
 </nav>
 
 <div class="modal" id="sessionModal"><div class="modalbox">
@@ -360,7 +284,7 @@ button,input,select{font:inherit}button{color:inherit}.app{display:grid;grid-tem
       <button data-control="Lock PC">Lock</button><button data-control="Launch game">Launch game</button>
       <button data-control="Restart PC" data-destructive="1">Restart</button><button data-control="Shutdown PC" data-destructive="1">Shutdown</button>
     </div></div>
-    <div class="drawer-section"><div class="drawer-actions"><button class="danger" data-control="End session" data-destructive="1">End session</button><button data-jump="maintenance">Report issue</button></div></div>
+    <div class="drawer-section"><div class="drawer-actions"><button class="danger" data-control="End session" data-destructive="1">End session</button><button data-control="Add station note">Add note</button></div></div>
   </div>
 </aside>
 <div class="control-confirm" id="controlConfirm"><div class="control-box"><h3 id="confirmTitle">Confirm action</h3><p id="confirmText">This action affects the selected station.</p><div class="modalfoot"><button class="btn" id="cancelControl">Cancel</button><button class="btn primary" id="confirmControl">Confirm</button></div></div></div>
@@ -373,7 +297,7 @@ button,input,select{font:inherit}button{color:inherit}.app{display:grid;grid-tem
     dashboard:['Dashboard','Live cafe overview'],stations:['Live Floor','Real-time cafe layout and station control'],
     bookings:['Bookings','Reservations and check-ins'],customers:['Customers','Players and visit history'],
     pos:['POS & Orders','Cafe food, drinks and merchandise'],wallet:['Wallet & Passes','Balances, memberships and packages'],
-    kitchen:['Kitchen Queue','Cafe order preparation'],tournaments:['Tournaments','Events, teams and brackets'],inventory:['Inventory','Cafe stock and spare hardware'],maintenance:['Maintenance','Station incidents and equipment health'],staff:['Staff & Shifts','Roles, attendance and settlement'],reports:['Reports','Performance and revenue analytics']
+    kitchen:['Kitchen Queue','Cafe order preparation']
   };
   var pcs=[
     ['PC-01','busy','Arjun M.','01:24:18',72],['PC-02','online','Available','—',0],['PC-03','busy','Rohan S.','00:42:11',38],['PC-04','busy','Yash K.','01:11:03',59],
@@ -462,8 +386,7 @@ button,input,select{font:inherit}button{color:inherit}.app{display:grid;grid-tem
   document.getElementById('notifBtn').addEventListener('click',function(){toast('3 new notifications')});
   document.getElementById('fakeBooking').addEventListener('click',function(){toast('Demo: customer booking form is linked in the sidebar')});
   document.getElementById('newCustomer').addEventListener('click',function(){toast('New customer form opened in full product')});
-  document.getElementById('exportBtn').addEventListener('click',function(){toast('Report export prepared (demo)')});
-  ['newKitchenOrder','createTournament','stockAdjust','reportIssue','clockShift'].forEach(function(id){var el=document.getElementById(id);if(el)el.addEventListener('click',function(){toast('Action opened · demo')})});
+  ['newKitchenOrder'].forEach(function(id){var el=document.getElementById(id);if(el)el.addEventListener('click',function(){toast('Action opened · demo')})});
   document.querySelectorAll('.kitchenAdvance').forEach(function(b){b.addEventListener('click',function(){toast('Kitchen order advanced to next stage')})});
   document.getElementById('checkoutBtn').addEventListener('click',function(){if(!cart.length){toast('Add menu items first');return}cart=[];renderCart();toast('Order sent to cafe counter')});
   document.addEventListener('click',function(e){
