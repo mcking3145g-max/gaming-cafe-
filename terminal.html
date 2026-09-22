@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NEXUS Terminal — PC-07</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#080a0f;--p:#7c5cff;--g:#38d996;--line:#242a36;--muted:#8b93a1}*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:radial-gradient(800px 500px at 80% 0,rgba(124,92,255,.18),transparent 60%),#080a0f;color:#fff;font-family:Inter,system-ui,sans-serif}
+.top{height:70px;padding:0 25px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);background:#0c0f15cc;backdrop-filter:blur(18px)}
+.brand{font:700 15px 'Space Grotesk';letter-spacing:.14em}.station{display:flex;gap:16px;align-items:center;color:var(--muted);font-size:12px}.station b{color:#fff}.online{width:7px;height:7px;background:var(--g);border-radius:50%;box-shadow:0 0 15px #38d996}
+.wrap{width:min(1180px,calc(100% - 32px));margin:0 auto;padding:45px 0 80px}.hero{display:grid;grid-template-columns:1.35fr .65fr;gap:16px}
+.panel{border:1px solid var(--line);border-radius:22px;background:linear-gradient(150deg,#121620,#0d1016);box-shadow:0 25px 70px rgba(0,0,0,.25)}
+.welcome{padding:35px}.eyebrow{font-size:10px;color:#a79aff;text-transform:uppercase;letter-spacing:.14em;font-weight:700}.welcome h1{font:700 clamp(38px,6vw,72px)/.95 'Space Grotesk';letter-spacing:-.05em;margin:16px 0 14px}.welcome p{color:var(--muted);max-width:600px;line-height:1.65;font-size:14px}.timebox{padding:30px;display:flex;flex-direction:column;justify-content:space-between}.timebox span{color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.09em}.clock{font:700 42px 'Space Grotesk';margin:10px 0}.bar{height:5px;background:#232936;border-radius:99px;overflow:hidden}.bar i{display:block;width:58%;height:100%;background:linear-gradient(90deg,#7c5cff,#ad9eff)}.money{display:flex;justify-content:space-between;margin-top:18px;color:var(--muted);font-size:12px}.money strong{color:#fff}
+.grid{display:grid;grid-template-columns:2fr 1fr;gap:16px;margin-top:16px}.games{padding:22px}.head{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}.head strong{font:600 14px 'Space Grotesk'}.head span{color:var(--muted);font-size:10px}.gamegrid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.game{min-height:120px;border:1px solid var(--line);border-radius:16px;background:#0c0f15;padding:15px;cursor:pointer;transition:.2s;display:flex;flex-direction:column;justify-content:space-between}.game:hover{transform:translateY(-2px);border-color:#453d66;background:rgba(124,92,255,.06)}.game .icon{font-size:27px}.game strong{font-size:12px}.game span{color:var(--muted);font-size:9px;margin-top:4px}
+.actions{padding:22px}.action{width:100%;text-align:left;border:1px solid var(--line);border-radius:14px;background:#0c0f15;color:#fff;padding:14px;margin:6px 0;cursor:pointer}.action strong{display:block;font-size:11px}.action span{display:block;color:var(--muted);font-size:9px;margin-top:4px}.action.end{border-color:rgba(255,107,122,.25);color:#ff8e99;background:rgba(255,107,122,.05)}
+.toast{position:fixed;right:20px;bottom:20px;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:#131823;opacity:0;transform:translateY(10px);transition:.25s;font-size:11px}.toast.show{opacity:1;transform:none}
+.back{color:#bbb4ff;text-decoration:none;font-size:11px}
+@media(max-width:800px){.hero,.grid{grid-template-columns:1fr}.gamegrid{grid-template-columns:1fr 1fr}.welcome{padding:24px}.top{padding:0 16px}.station span{display:none}}
+</style></head>
+<body>
+<header class="top"><div class="brand">NEXUS TERMINAL</div><div class="station"><i class="online"></i><span>Connected to Demo Arena</span><b>PC-07</b><a class="back" href="index.html">Admin demo ↗</a></div></header>
+<main class="wrap">
+  <section class="hero">
+    <div class="panel welcome"><div class="eyebrow">Session active · Elite member</div><h1>Welcome back,<br>Arjun.</h1><p>Your setup is ready. Launch an approved game, order from the café, or extend your session without leaving the station.</p></div>
+    <div class="panel timebox"><div><span>Session time remaining</span><div class="clock" id="clock">01:24:18</div><div class="bar"><i></i></div></div><div class="money"><span>Wallet balance</span><strong>₹740</strong></div></div>
+  </section>
+  <section class="grid">
+    <div class="panel games"><div class="head"><strong>Games & apps</strong><span>Approved library</span></div><div class="gamegrid">
+      <button class="game" data-game="Valorant"><span class="icon">◈</span><div><strong>Valorant</strong><span>Riot Games</span></div></button>
+      <button class="game" data-game="Counter-Strike 2"><span class="icon">◎</span><div><strong>Counter-Strike 2</strong><span>Steam</span></div></button>
+      <button class="game" data-game="Fortnite"><span class="icon">△</span><div><strong>Fortnite</strong><span>Epic Games</span></div></button>
+      <button class="game" data-game="EA Sports FC"><span class="icon">◇</span><div><strong>EA Sports FC</strong><span>EA App</span></div></button>
+      <button class="game" data-game="GTA V"><span class="icon">V</span><div><strong>GTA V</strong><span>Rockstar</span></div></button>
+      <button class="game" data-game="Apex Legends"><span class="icon">A</span><div><strong>Apex Legends</strong><span>Steam</span></div></button>
+      <button class="game" data-game="Discord"><span class="icon">☊</span><div><strong>Discord</strong><span>Communication</span></div></button>
+      <button class="game" data-game="Steam"><span class="icon">S</span><div><strong>Steam</strong><span>Launcher</span></div></button>
+    </div></div>
+    <aside class="panel actions"><div class="head"><strong>Session controls</strong><span>Player tools</span></div>
+      <button class="action" id="extend"><strong>+ Extend session</strong><span>Add time using wallet or UPI</span></button>
+      <button class="action" id="order"><strong>☕ Order food & drinks</strong><span>Delivered to PC-07</span></button>
+      <button class="action" id="help"><strong>◎ Call staff</strong><span>Request help at your station</span></button>
+      <button class="action end" id="end"><strong>End session</strong><span>Sign out and lock this PC</span></button>
+    </aside>
+  </section>
+</main>
+<div class="toast" id="toast"></div>
+<script>
+(function(){var t=document.getElementById('toast'),timer;function toast(m){t.textContent=m;t.classList.add('show');clearTimeout(timer);timer=setTimeout(function(){t.classList.remove('show')},2200)}
+document.querySelectorAll('[data-game]').forEach(function(b){b.addEventListener('click',function(){toast('Launching '+b.dataset.game+'… demo only')})});
+document.getElementById('extend').onclick=function(){toast('Session extension opened · demo')};
+document.getElementById('order').onclick=function(){toast('Cafe menu opened · demo')};
+document.getElementById('help').onclick=function(){toast('Staff notified for PC-07')};
+document.getElementById('end').onclick=function(){toast('End-session confirmation · demo')};
+})();
+</script>
+</body></html>
